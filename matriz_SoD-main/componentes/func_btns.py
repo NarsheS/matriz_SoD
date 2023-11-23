@@ -79,13 +79,6 @@ class OFrame(CTkFrame):
         self.create.grid(row=0, column=0, padx=(20, 15), pady=(21, 20), sticky="e")
         self.create.configure(width=27, height=27)
 
-        self.search = CTkEntry(self, placeholder_text="Buscar")
-        self.search.grid(row=0, column=1, padx=(0, 15), pady=20, sticky="e")
-
-        self.btn_search = CTkButton(self, text="Buscar", corner_radius=8)
-        self.btn_search.grid(row=0, column=2, padx=(0, 15), pady=(21, 20), sticky="e")
-        self.btn_search.configure(width=27, height=27)
-
-        self.reload = CTkButton(self, text="F5", corner_radius=8, command=atualizar)
+        self.reload = CTkButton(self, text="Atualizar", corner_radius=8, command=atualizar)
         self.reload.grid(row=0, column=3, padx=0, pady=(21, 20), sticky="e")
         self.reload.configure(width=27, height=27)
